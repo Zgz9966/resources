@@ -5,7 +5,7 @@ import config from '@/config';
 import { isRoot } from './../lib/user';
 Vue.use(Router);
 
-const token = false;
+const token = true;
 const userAccess = ['工人'];
 const router = new Router({
   mode: 'history',
