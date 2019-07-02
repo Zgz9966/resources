@@ -1,0 +1,52 @@
+@import './val.sass';
+#app-drawer 
+  .v-list__tile 
+    border-radius: 2px;
+    &--buy 
+      margin-top: auto;
+      margin-bottom: 37px;
+  .v-image__image--contain 
+    top: 9px;
+    height: 60%;
+  .search-input 
+    margin-bottom: 30px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  div.v-responsive.v-image > div.v-responsive__content 
+    overflow-y: auto;
+
+.v-navigation-drawer__content 
+  border-radius: $border-radius-dropdown;
+  box-shadow: $box-shadow-general;
+
+  .sidebar-filter 
+    height: 30px;
+    line-height: 25px;
+    font-size: $font-size-small !important;
+    font-weight: $font-weight-bolder + 100;
+    color: $black-color;
+  
+
+  .v-responsive 
+    max-height: 100px;
+    border-radius: $border-radius-dropdown;
+    max-width: 50px;
+    margin: 0 auto;
+  
+
+  .container.grid-list-xl .layout .flex 
+    padding: $padding-small - 5;
+  
+
+  .v-avatar,
+  .v-responsive 
+    border: 3px solid $white;
+    transition: all .34s;
+
+    &:not(:last-child) 
+      margin-right: 5px;
+
+    &.image-active,
+    &.color-active 
+      border-color: #fff;
+
