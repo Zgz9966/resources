@@ -5,14 +5,10 @@ import router from './router';
 import store from './store';
 
 // UI库引入
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
-import '@mdi/font/css/materialdesignicons.css';
-import colors from 'vuetify/es5/util/colors';
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
 
-Vue.use(Vuetify, {
-  iconfont: 'mdi',
-});
+Vue.use(iView);
 Vue.config.productionTip = false;
 
 new Vue({

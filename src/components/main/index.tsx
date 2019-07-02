@@ -42,7 +42,7 @@ export default class Main extends Vue {
     'https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-4.3b7e38ed.jpg'
   ];
   public setColor = (c) => {
-    this.$vuetify.theme.primary = c;
+
   }
   public setImage = (img: string) => {
     this.img = img;
@@ -62,7 +62,7 @@ export default class Main extends Vue {
   }
   protected render() {
     return (
-      <v-app dark>
+      <v-app>
         <v-navigation-drawer
           id="app-drawer"
           clipped
@@ -99,18 +99,6 @@ export default class Main extends Vue {
                   );
                 })
               }
-              <v-list-tile
-                active-class="primary"
-                class="v-list-item v-list__tile--buy"
-                to="/"
-              >
-                <v-list-tile-action>
-                  <v-icon>mdi-help</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-title class="font-weight-light">
-                  山下出泉 | 技术支持
-                </v-list-tile-title>
-              </v-list-tile>
             </v-layout>
           </v-img>
         </v-navigation-drawer>
@@ -122,7 +110,7 @@ export default class Main extends Vue {
           fixed
           clipped-left
         >
-          <v-toolbar-title><h1>山下出泉</h1></v-toolbar-title>
+          <v-toolbar-title><h1>前端手册</h1></v-toolbar-title>
           <template slot = 'extension'>
             <v-toolbar-side-icon onClick={ this.handleDrawer.bind(this) }></v-toolbar-side-icon>
             <v-spacer></v-spacer>
@@ -199,7 +187,7 @@ export default class Main extends Vue {
                   </v-flex>
                   <v-flex xs12>
                     <v-btn
-                      href="https://github.com/yxbysxcoco"
+                      href="https://github.com/yxbysxcoco/resources"
                       target="_blank"
                       class="white--text"
                       color="primary"

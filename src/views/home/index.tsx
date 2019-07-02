@@ -6,14 +6,7 @@ import './index.scss';
 export default class Home extends Vue {
   protected render() {
     return (
-      <v-layout row>
-        <v-flex xs9>
-
-        </v-flex>
-        <v-flex xs3>
-        123
-        </v-flex>
-      </v-layout>
+      <div>home这是一个home页面</div>
     );
   }
 }

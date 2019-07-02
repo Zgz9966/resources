@@ -9,12 +9,14 @@ export default class Footer extends Vue {
     "fab fa-twitter",
     "fab fa-google-plus",
     "fab fa-linkedin",
-    "fab fa-instagram"
+    "fab fa-github"
   ];
   protected render() {
     return (
-      <v-footer height="auto" fixed={ true }>
-        <h4> &copy; 2019 - _______ | <strong>湖南山下出泉信息技术有限公司</strong> | 前端  🚀发射中心</h4>
+      <v-footer height="auto" fixed={ true } color="primary">
+        <h4> &copy; 2019 |
+          <strong><a href="https://github.com/yxbysxcoco" style="color: #111;"> yxbysxcoco</a></strong> | 🚀
+        </h4>
         <v-spacer></v-spacer>
         {this.icons.map((icon, index) => {
             return (

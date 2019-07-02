@@ -8,7 +8,7 @@ Vue.use(Router);
 const token = true;
 const userAccess = ['工人'];
 const router = new Router({
-  mode: 'history',
+  // mode: 'history', 目前不知道部署到gitpage时如果是history如何配置映射，有机会再更改为history模式
   routes,
 });
 
