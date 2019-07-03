@@ -1411,7 +1411,7 @@ async-limiter@~1.0.0:
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
   integrity sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
 
-async-validator@^1.10.0:
+async-validator@^1.10.0, async-validator@^1.8.2:
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/async-validator/-/async-validator-1.11.3.tgz#23703b19740721d88edbcb6310f6d745da9ec109"
   integrity sha512-Xeyt+fpqTSYeC++J/M/KkBq8UEGiAkjjKTirKhvkR9M9q+iZNCsv6ffVWNySllAuNPZ+SqzKMgBuvWHILjHatg==
@@ -1539,7 +1539,7 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-batch-processor@1.0.0:
+batch-processor@1.0.0, batch-processor@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/batch-processor/-/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
   integrity sha1-dclcMrdI4IUNEMKxaPa9vpiRrOg=
@@ -2656,7 +2656,7 @@ deepmerge@^1.5.2:
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
   integrity sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==
 
-deepmerge@^2.2.1:
+deepmerge@^2.1.0, deepmerge@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
   integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
@@ -2912,6 +2912,13 @@ electron-to-chromium@^1.3.164:
   version "1.3.180"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.180.tgz#8e8c6be930d137e88cf2946ad2ec6521d24ba70e"
   integrity sha512-jwI82/63GeH7f08IR+4v/tbGM4DMAApMZO0SXLcC0np4lcqWjQBl0MIHkfXEqesLc55+NhVVX8g7eFlamEWoNQ==
+
+element-resize-detector@^1.1.14:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/element-resize-detector/-/element-resize-detector-1.1.15.tgz#48eba1a2eaa26969a4c998d972171128c971d8d2"
+  integrity sha512-16/5avDegXlUxytGgaumhjyQoM6hpp5j3+L79sYq5hlXfTNRy5WMMuTVWkZU3egp/CokCmTmvf18P3KeB57Iog==
+  dependencies:
+    batch-processor "^1.0.0"
 
 element-resize-detector@^1.2.0:
   version "1.2.0"
@@ -3783,6 +3790,11 @@ highlight.js@^9.6.0:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.8.tgz#f344fda123f36f1a65490e932cf90569e4999971"
   integrity sha512-RrapkKQWwE+wKdF73VsOa2RQdIoO3mxwJ4P8mhbI6KYJUraUHRKM5w5zQQKXNk0xNL4UVRdulV9SBJcmzJNzVA==
 
+highlightjs@^9.10.0:
+  version "9.12.0"
+  resolved "https://registry.yarnpkg.com/highlightjs/-/highlightjs-9.12.0.tgz#9b84eb42a7aa8488eb69ac79fec44cf495bf72a1"
+  integrity sha512-eAhWMtDZaOZIQdxIP4UEB1vNp/CVXQPdMSihTSuaExhFIRC0BVpXbtP3mTP1hDoGOyh7nbB3cuC3sOPhG5wGDA==
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -4412,6 +4424,30 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+iview-editor@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/iview-editor/-/iview-editor-1.1.1.tgz#d3698cd575f4de8d8a027b0c52cc2263eeeab5ba"
+  integrity sha512-FJbCVWSQlehJGQ65emNiXphHO/xV7Tg+QwXJTN3mnzsFxHPUL+N087l0g91jySD9mb4ts0gPZszSbhWkcPRJyw==
+  dependencies:
+    highlightjs "^9.10.0"
+    iview "^2.11.0"
+    marked "^0.3.19"
+    vue "^2.5.16"
+
+iview@^2.11.0:
+  version "2.14.3"
+  resolved "https://registry.yarnpkg.com/iview/-/iview-2.14.3.tgz#0f32a450f956cce2ac60a4df5a6eba30816a0708"
+  integrity sha512-jK5CBNuNBKUZWooCVlipBIUkNnGeZHRtypeuMo9VhQmJ9cCXmuI6BalrtxBFkBCnuUXRdFD34/kSevF9Cc2kpg==
+  dependencies:
+    async-validator "^1.8.2"
+    deepmerge "^2.1.0"
+    element-resize-detector "^1.1.14"
+    js-calendar "^1.2.3"
+    lodash.throttle "^4.1.1"
+    popper.js "^1.14.1"
+    tinycolor2 "^1.4.1"
+    v-click-outside-x "^3.0.0"
+
 iview@^3.4.2:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/iview/-/iview-3.4.2.tgz#1deafe8183fe29b9b33179d85faa37b3813b0f73"
@@ -4821,6 +4857,11 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+marked@^0.3.19:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
+  integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
 
 material-design-icons-iconfont@^5.0.1:
   version "5.0.1"
@@ -5823,7 +5864,7 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-popper.js@^1.14.6:
+popper.js@^1.14.1, popper.js@^1.14.6:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
   integrity sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
@@ -7862,7 +7903,7 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
-v-click-outside-x@^3.5.6:
+v-click-outside-x@^3.0.0, v-click-outside-x@^3.5.6:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/v-click-outside-x/-/v-click-outside-x-3.7.1.tgz#aa03eaa0e41e44cb5207dcf86c2d9f0dd64084c1"
   integrity sha512-WmUgmcIXr9clVpm1AYS/FgHtcDicfnfoxgQCNg4O6vfk9GVnxA0vSqO321ogUo0b7czYTidj7fQENvWFMWOkUg==
@@ -7959,7 +8000,7 @@ vue2-animate@^2.1.0:
   resolved "https://registry.yarnpkg.com/vue2-animate/-/vue2-animate-2.1.0.tgz#93eee5f381d8d6493bae0507bcad6b615fdacb7f"
   integrity sha512-OEuwx9Y2dmx3+hQ/K7zLc514v4xhc8tGDQl/ZTJh06r+/EG/oYQkhy2Fo4OOhDwiRJYFuTfkFhGlDtTnT4XGsw==
 
-vue@^2.6.10:
+vue@^2.5.16, vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==

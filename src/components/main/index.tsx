@@ -41,9 +41,6 @@ export default class Main extends Vue {
     'https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-3.3a54f533.jpg',
     'https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-4.3b7e38ed.jpg'
   ];
-  public setColor = (c) => {
-
-  }
   public setImage = (img: string) => {
     this.img = img;
   }
@@ -144,7 +141,6 @@ export default class Main extends Vue {
                                 key={ c }
                                 color={ c }
                                 size="14"
-                                onClick={this.setColor.bind(this, c)}
                               />
                             </v-flex>
                           );

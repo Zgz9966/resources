@@ -6,9 +6,9 @@ import { isRoot } from './../lib/user';
 Vue.use(Router);
 
 const token = true;
-const userAccess = ['工人'];
+const userAccess = ["游客"];
 const router = new Router({
-  // mode: 'history', 目前不知道部署到gitpage时如果是history如何配置映射，有机会再更改为history模式
+  // mode: 'history', 目前暂时没有部署到gitpage时针对history模式的路由映射，有机会再更改为history模式
   routes,
 });
 
@@ -18,7 +18,7 @@ const turnTo = (to, access, next) => {
   } else {
     next({
       replace: true,
-      name: 'error401'
+      name: config.ERROR_404_PAGE_NAME
     });
   }
 };
@@ -36,7 +36,7 @@ router.beforeEach((to, from, next) => {
   } else if (token && to.name === config.LOGIN_PAGE_NAME) {
     // 已登录且要跳转的页面是登录页
     next({
-      name: config.HOME_PAGE_NAME // 跳转到homeName页
+      name: config.HOME_PAGE_NAME
     });
   } else {
     // 鉴定权限，如果无权限返回登录页

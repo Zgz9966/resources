@@ -12,6 +12,9 @@ const routes = [
   {
     path: '/',
     name: '/',
+    meta: {
+      access: ['游客'],
+    },
     component: () => import('../views/home'),
   },
   // {

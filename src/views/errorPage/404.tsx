@@ -2,7 +2,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component({
   name: 'error404',
 })
-export default class Error401 extends Vue {
+export default class Error404 extends Vue {
 
   protected render() {
     return (

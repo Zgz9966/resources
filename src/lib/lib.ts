@@ -18,4 +18,11 @@ export const hasOneOf = (targetarr, arr) => {
 export const refresh = () => {
   location.reload();
 };
+export const mdReplace = (text: string) => {
+  text = text.replace(new RegExp('<pre><code>', 'g'), '```');
+  text = text.replace(new RegExp('<pre><code class="language-html">', 'g'), '```');
+  text = text.replace(new RegExp('</code></pre>', 'g'), '```');
+  return text;
+};
+
 

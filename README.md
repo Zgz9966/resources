@@ -11,6 +11,10 @@
 ```
 yarn install
 yarn run serve
+
+// 或者
+npm install
+npm run serve
 ```
 
 - 欢迎fork📚

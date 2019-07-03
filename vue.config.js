@@ -15,6 +15,13 @@ module.exports = {
       .set("@", resolve("src"))
       .set("_c", resolve("src/components"))
       .set("api", resolve("src/api"));
+    config.module.rule("md")
+      .test(/\.md/)
+      .use("html-loader")
+      .loader("html-loader")
+      .end()
+      .use("markdown-loader")
+      .loader("markdown-loader");
   },
   productionSourceMap: false,
 };
