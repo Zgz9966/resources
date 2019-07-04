@@ -11,6 +11,8 @@ import mavonEditor from 'mavon-editor';
 import 'mavon-editor/dist/css/index.css';
 import 'mavon-editor/dist/highlightjs/styles/googlecode.min.css';
 import 'mavon-editor/src/lib/css/markdown.css';
+import './assets/styles/theme/pink.less';
+import './assets/styles/reset.css';
 
 Vue.use(mavonEditor);
 Vue.use(iView);

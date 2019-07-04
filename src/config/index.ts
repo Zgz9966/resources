@@ -14,4 +14,5 @@ export default {
   LOGIN_PAGE_NAME: 'login',
   HOME_PAGE_NAME: 'home',
   ERROR_404_PAGE_NAME: 'error404',
+  ERROR_401_PAGE_NAME: 'error401',
 };

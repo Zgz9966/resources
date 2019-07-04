@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import routes from './routes';
 import config from '@/config';
 import { isRoot } from './../lib/user';
+import { LoadingBar } from 'iview';
 Vue.use(Router);
 
 const token = true;
@@ -18,13 +19,15 @@ const turnTo = (to, access, next) => {
   } else {
     next({
       replace: true,
-      name: config.ERROR_404_PAGE_NAME
+      name: config.ERROR_401_PAGE_NAME
     });
   }
 };
 
 // 实现前端路由控制和权限控制
 router.beforeEach((to, from, next) => {
+  // 展示加载进度条
+  LoadingBar.start();
   if (!token && to.name !== config.LOGIN_PAGE_NAME) {
     // 未登录且要跳转的页面不是登录页
     next({
@@ -39,14 +42,17 @@ router.beforeEach((to, from, next) => {
       name: config.HOME_PAGE_NAME
     });
   } else {
-    // 鉴定权限，如果无权限返回登录页
     try {
       turnTo(to, userAccess, next);
     } catch (e) {
       // console.log(e);
-      next({ name: config.LOGIN_PAGE_NAME });
+      next({ name: config.ERROR_404_PAGE_NAME });
     }
   }
+});
+
+router.afterEach((route) => {
+  LoadingBar.finish();
 });
 
 export default router;
