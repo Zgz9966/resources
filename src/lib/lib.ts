@@ -18,11 +18,14 @@ export const hasOneOf = (targetarr, arr) => {
 export const refresh = () => {
   location.reload();
 };
-export const mdReplace = (text: string) => {
-  text = text.replace(new RegExp('<pre><code>', 'g'), '```');
-  text = text.replace(new RegExp('<pre><code class="language-html">', 'g'), '```');
-  text = text.replace(new RegExp('</code></pre>', 'g'), '```');
-  return text;
+export const setLocalList = (list: object[]) => {
+  localStorage.removeItem("yxbysxcocoList");
+  localStorage.setItem("yxbysxcocoList", JSON.stringify(list));
 };
+export const getLocalList = () => {
+  const res = JSON.parse(localStorage.getItem("yxbysxcocoList"));
+  return res;
+};
+
 
 

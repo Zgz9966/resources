@@ -1,22 +1,17 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+import todo from './modules/todo';
+
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    todoList: [
-      {
-        text: '学习',
-        complete: false,
-      },
-      {
-        text: '学习1111',
-        complete: false,
-      },
-    ],
   },
   mutations: {
   },
   actions: {},
+  modules: {
+    todo,
+  }
 });
