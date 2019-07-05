@@ -21,4 +21,4 @@ npm run serve
 
 ### 随时随地可用的todoList
 
-![avatar](./src/assets/imgs/todoDemo.jpg)
+![avatar](src/assets/imgs/todoDemo.gif)

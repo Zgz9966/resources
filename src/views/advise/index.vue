@@ -32,7 +32,6 @@
 import { Component, Vue } from "vue-property-decorator";
 import { State, Mutation } from "vuex-class";
 import first from './basic.md';
-import md from '../../assets/md/index.md';
 @Component({
   name: "advise"
 })
