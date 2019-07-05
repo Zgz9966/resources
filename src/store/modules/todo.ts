@@ -5,7 +5,7 @@ import {
 export default {
   namespaced: true,
   state: {
-    todoList: getLocalList()
+    todoList: getLocalList() ? getLocalList() : []
   },
   mutations: {
     // 添加一项
