@@ -13,17 +13,7 @@
       </Affix>
     </i-col>
     <i-col span="19" offset="1">
-      <div class="markdown-body" v-html="firstMd" v-highlight></div>
-      <!-- <mavon-editor
-        v-model="firstMd"
-        :toolbarsFlag="false"
-        :editable="false"
-        defaultOpen="preview"
-        :subfield="false"
-        :ishljs="true"
-        :boxShadow="false"
-        codeStyle='hybrid'
-      />  -->
+      <!-- <div class="markdown-body hljs" v-html="firstMd"></!-->
     </i-col>
   </Row>
 </template>
@@ -31,13 +21,10 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { State, Mutation } from "vuex-class";
-import first from './basic.md';
-import md from '../../assets/md/index.md';
 @Component({
-  name: "advise"
+  name: "bookList"
 })
-export default class Advise extends Vue {
-  public firstMd = first;
+export default class BookList extends Vue {
   public columns = [
     {
       title: '学习建议',
@@ -46,40 +33,28 @@ export default class Advise extends Vue {
   ];
   public data = [
     {
-      item: "前端是什么",
+      item: "基础三板斧",
       index: "#1",
     },
     {
-      item: "起步",
+      item: "Web端",
       index: "#2",
     },
     {
-      item: "基础学习",
+      item: "移动端",
       index: "#3",
     },
     {
-      item: "库学习",
+      item: "计算机基础",
       index: "#4",
     },
     {
-      item: "Vue学习",
+      item: "设计相关",
       index: "#5",
     },
     {
-      item: "React学习",
+      item: "拓展",
       index: "#6",
-    },
-    {
-      item: "Angular学习",
-      index: "#7",
-    },
-    {
-      item: "如何进阶",
-      index: "#8",
-    },
-    {
-      item: "打造script工作流",
-      index: "#9",
     },
   ];
   public handleClick(i) {

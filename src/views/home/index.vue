@@ -1,7 +1,7 @@
 <template>
-  <Card dis-hover style="margin-top: 10%; height: 400px;">
-    <div style="margin: 20px;">
-      <h2>首页空空荡荡冷冷清清,所以就介绍一下这个网站包含的内容吧? <small></small></h2>
+  <Card dis-hover style="margin-top: 10%;">
+    <div style="margin: 20px; font-size: 26px;">
+      <h2>欢迎来到Yxbysxcoco的handbook</h2>
     </div>
     <Collapse simple accordion>
       <Panel name="1">
@@ -25,9 +25,6 @@
         <p slot="content">我会把我的博客迁移到这里来,里面有很多我走过的弯弯曲曲扭扭斜斜的路,希望能给你一些帮助</p>
       </Panel>
     </Collapse>
-    <div style="float: right; margin-top: 20px;">
-      <Button><Icon size="18" type="md-arrow-round-forward" /></Button>
-    </div>
   </Card>
 </template>
 
@@ -38,5 +35,8 @@ import { State, Mutation } from "vuex-class";
   name: "home"
 })
 export default class Home extends Vue {
+  public handleEnter() {
+    this.$router.push('/advise');
+  }
 }
 </script>

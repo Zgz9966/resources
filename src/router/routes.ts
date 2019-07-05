@@ -33,6 +33,13 @@ const routes = [
       meta: {
         access: ['游客'],
       },
+    }, {
+      path: '/bookList',
+      name: 'bookList',
+      component: () => import('../views/bookList/index.vue'),
+      meta: {
+        access: ['游客'],
+      },
     }, ]
   },
   {

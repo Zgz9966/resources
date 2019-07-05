@@ -8,15 +8,21 @@ import store from './store';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import mavonEditor from 'mavon-editor';
-import 'mavon-editor/dist/css/index.css';
-import 'mavon-editor/dist/highlightjs/styles/googlecode.min.css';
-import 'mavon-editor/src/lib/css/markdown.css';
 import './assets/styles/theme/pink.less';
+import hljs from 'highlight.js';
 import './assets/styles/reset.css';
+import './assets/styles/markdown.css';
 
 Vue.use(mavonEditor);
 Vue.use(iView);
 Vue.config.productionTip = false;
+
+Vue.directive('highlight', (el) => {
+  const blocks = el.querySelectorAll('pre code');
+  blocks.forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
 
 new Vue({
   router,
