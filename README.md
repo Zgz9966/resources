@@ -21,4 +21,4 @@ npm run serve
 
 ### 随时随地可用的todoList
 
-![image](https://github.com/yxbysxcoco/resources/src/assets/imgs/todoDemo.gif)
+![image](https://github.com/yxbysxcoco/resources/blob/master/src/assets/imgs/todoDemo.gif)
