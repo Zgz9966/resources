@@ -21,4 +21,4 @@ npm run serve
 
 ### 随时随地可用的todoList
 
-![avatar](../../assets/imgs/todoDemo.jpg)
+<iframe height=500 width=500 src="src/assets/imgs/todoDemo.jpg">
